@@ -1,0 +1,7 @@
+<launch>
+  <arg name="launch_prefix" default=""/>
+  <!-- 과제 수행에 필요한 노드 실행 -->
+  <node pkg="assignment_2" type="control.py" name="control_node" output="screen"/>
+  <node pkg="assignment_2" type="line_tracking.py" name="line_tracking_node" output="screen"/>
+  <node pkg="assignment_2" type="traffic_light.py" name="traffic_light_node" output="screen"/>
+</launch>
